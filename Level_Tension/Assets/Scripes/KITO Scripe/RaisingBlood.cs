@@ -29,12 +29,13 @@ public class RaisingBlood : MonoBehaviour
             transform.Translate(0f, raiseSpeed, 0f);
             if (!audioSource.isPlaying)
             {
-                audioTimer += Time.deltaTime;
-                if (audioTimer >= audioPlayInterval)
+                audioSource.Play();
+                //audioTimer += Time.deltaTime;
+                //if (audioTimer >= audioPlayInterval)
                 {
-                    audioSource.Play();
-                    audioTimer = 0f;
-                    audioSource.Stop();
+
+                    //audioTimer = 0f;
+                    //audioSource.Stop();
                 }
             }
         }
