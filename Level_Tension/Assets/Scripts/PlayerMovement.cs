@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
-    bool jumpEnabled;
+    public bool jumpEnabled;
 
     // Start is called before the first frame update
     void Start()
