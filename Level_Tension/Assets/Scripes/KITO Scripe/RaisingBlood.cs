@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class RaisingBlood : MonoBehaviour
 {
-    [SerializeField] private bool hasCheckedTheDoor = false;
+    [SerializeField] private bool startToFlood = false;
     [SerializeField] public float raiseSpeed = 0.0001f;
+    [SerializeField] private bool canPlayAudio = true;
+    [SerializeField] private float startDeley = 3.0f;
+    [SerializeField] private float dripRate = 3.0f;
     private AudioSource audioSource;
-    //private bool canPlayAudio = true;
-    private float audioPlayInterval = 3f;
-    private float audioTimer = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        InvokeRepeating("AudioDelay", startDeley, dripRate);    //To cancel InvokeRepeating use MonoBehaviour.CancelInvoke.
     }
 
     public void DoorCheck()
@@ -24,20 +26,31 @@ public class RaisingBlood : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasCheckedTheDoor == true)
+        if (startToFlood == true)
         {
             transform.Translate(0f, raiseSpeed, 0f);
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-                //audioTimer += Time.deltaTime;
-                //if (audioTimer >= audioPlayInterval)
-                {
+        }
+    }
 
-                    //audioTimer = 0f;
-                    //audioSource.Stop();
-                }
+    private void AudioDelay()
+    {
+        if (startToFlood == true)
+        {
+            if (!audioSource.isPlaying && canPlayAudio)
+            {
+                audioSource.loop = !audioSource.loop;
+                audioSource.Play();
+                audioSource.loop = !audioSource.loop;
+            }
+            else if (audioSource.isPlaying && !canPlayAudio)
+            {
+                audioSource.Stop();
+            }
+            else if (!canPlayAudio)
+            {
+                audioSource.Stop();
             }
         }
+
     }
 }
