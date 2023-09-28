@@ -18,9 +18,9 @@ public class RaisingBlood : MonoBehaviour
         InvokeRepeating("AudioDelay", startDeley, dripRate);    //To cancel InvokeRepeating use MonoBehaviour.CancelInvoke.
     }
 
-    public void DoorCheck()
+    public void Flood()
     {
-        //startToFlood = true;
+        startToFlood = true;
     }
 
     // Update is called once per frame

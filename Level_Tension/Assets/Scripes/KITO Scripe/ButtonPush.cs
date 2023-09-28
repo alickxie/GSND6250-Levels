@@ -34,6 +34,12 @@ public class ButtonPush : MonoBehaviour
                 {
                     Debug.Log("Switch2!");
                     FindObjectOfType<Turn90forL>().updateTurn();
+                    GameObject[] raisingBlood =  GameObject.FindGameObjectsWithTag("Blood");
+                    foreach (GameObject blood in raisingBlood)
+                    {
+                        blood.GetComponent<RaisingBlood>().Flood();
+                        //Flood();
+                    }
                 }
                 else if (hit.transform.gameObject.name == "Switch3")
                 {
