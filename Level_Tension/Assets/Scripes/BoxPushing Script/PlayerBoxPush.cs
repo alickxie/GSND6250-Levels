@@ -14,6 +14,7 @@ public class PlayerBoxPush : MonoBehaviour
     private Vector3 initialOffsetFromBox;
     
     public Vector3 pushDirection;
+    public Transform camera;
 
     void Awake()
     {
@@ -60,7 +61,7 @@ public class PlayerBoxPush : MonoBehaviour
     void TryAttachToBox()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, maxRaycastDistance))
+        if (Physics.Raycast(camera.position, camera.forward, out hit, maxRaycastDistance))
         {
             if (hit.collider.CompareTag("Box"))
             {
@@ -77,5 +78,11 @@ public class PlayerBoxPush : MonoBehaviour
     {
         isAttached = false;
         attachedBox = null;
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(camera.position, camera.forward * maxRaycastDistance);
     }
 }
