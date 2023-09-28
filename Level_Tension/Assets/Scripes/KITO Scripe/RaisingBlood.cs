@@ -55,11 +55,11 @@ public class RaisingBlood : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.CompareTag("Head"))
+        //Debug.Log(other.gameObject.name);
+        if (other.CompareTag("Head"))
         {
             Debug.Log("Dead");
-            startToFlood = true;
+            startToFlood = false;
         }
     }
 
