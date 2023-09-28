@@ -35,6 +35,10 @@ public class ButtonPush : MonoBehaviour
                     Debug.Log("Switch2!");
                     FindObjectOfType<Turn90forL>().updateTurn();
                 }
+                else if (hit.transform.gameObject.name == "Switch3")
+                {
+                    FindObjectOfType<TurnOnLit>().TurnOnLight();
+                }
             }
         }
     }
