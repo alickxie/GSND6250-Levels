@@ -28,10 +28,12 @@ public class ButtonPush : MonoBehaviour
                 if (hit.transform.gameObject.name == "Switch1")
                 {
                     Debug.Log("Switch1!");
+                    FindObjectOfType<Turn90forR>().updateTurn();
                 }
                 else if (hit.transform.gameObject.name == "Switch2")
                 {
                     Debug.Log("Switch2!");
+                    FindObjectOfType<Turn90forL>().updateTurn();
                 }
             }
         }
