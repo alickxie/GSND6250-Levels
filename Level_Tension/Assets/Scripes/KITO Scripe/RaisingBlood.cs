@@ -20,7 +20,7 @@ public class RaisingBlood : MonoBehaviour
 
     public void DoorCheck()
     {
-        //hasCheckedTheDoor = true;
+        //startToFlood = true;
     }
 
     // Update is called once per frame
@@ -51,6 +51,22 @@ public class RaisingBlood : MonoBehaviour
                 audioSource.Stop();
             }
         }
+    }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Head"))
+        {
+            Debug.Log("Dead");
+            startToFlood = false;
+        }
+    }
+
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Head"))
+        {
+        }
     }
 }
