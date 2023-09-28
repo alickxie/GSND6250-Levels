@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 12f;
+    public float speed = 10f;
     public float gravity = -19.62f;
     public float jumpHeight = 3f;
 
@@ -37,6 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+        // if (PlayerBoxPush.Instance.isAttached)
+        // {
+        //     x = 0;
+        // }
+        // else
+        // {
+        //     x = Input.GetAxis("Horizontal");
+        // }
 
         Vector3 move = transform.right * x + transform.forward * z;
 

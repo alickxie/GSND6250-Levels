@@ -1164,7 +1164,7 @@ PrefabInstance:
     - target: {fileID: 40244278897048846, guid: 4cf29742dbcf0b24eb0268cf71e88041,
         type: 3}
       propertyPath: groundMask.m_Bits
-      value: 65
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 40244278897048847, guid: 4cf29742dbcf0b24eb0268cf71e88041, type: 3}
@@ -1179,7 +1179,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1916592257}
   - component: {fileID: 1916592258}
-  - component: {fileID: 1916592259}
   m_Layer: 0
   m_Name: Head
   m_TagString: Head
@@ -1215,18 +1214,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1916592259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916592256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a35a946c8e99a4290f5f841a808da3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1917588284 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 40244277947648259, guid: 4cf29742dbcf0b24eb0268cf71e88041,
