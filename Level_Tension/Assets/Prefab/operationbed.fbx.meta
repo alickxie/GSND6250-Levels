@@ -3,7 +3,52 @@ guid: c37e0e2625ba04349b274d143b7e0ad3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 376a57cca7553cc4894b7ee1bf33b5ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair
+    second: {fileID: 2100000, guid: 0819c548ee8f870419b542703ebff779, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door rust_lambert1_Roughness
+    second: {fileID: 2800000, guid: 3dc2ed0493cc59a43a6c632fe90b8b28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface6_BaseColor
+    second: {fileID: 2800000, guid: f302a7b3950d4724c8acc21a6f5ee6d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface6_Metallic
+    second: {fileID: 2800000, guid: 1925cd11d9091d142b20d21e3e08ccfb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface7_BaseColor
+    second: {fileID: 2800000, guid: 816205cbbc0eb724fa95cc11a199eac1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface7_Metallic
+    second: {fileID: 2800000, guid: 4d9f04f9f84aaf04285dc759f7cdfdc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface7_Normal
+    second: {fileID: 2800000, guid: 215e2cdbca89e6d49a594391c5949543, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: operationbed_standardSurface7_Roughness
+    second: {fileID: 2800000, guid: b14129a3e45f5094ba70942d0b50cc9c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
