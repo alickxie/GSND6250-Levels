@@ -11,7 +11,7 @@ public class ButtonPush : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -39,15 +39,16 @@ public class ButtonPush : MonoBehaviour
                 else if (hit.transform.gameObject.name == "Switch3")
                 {
                     FindObjectOfType<TurnOnLit>().TurnOnLight();
-                }
-                else if (hit.transform.gameObject.name == "Switch4")
-                {
                     GameObject[] raisingBlood = GameObject.FindGameObjectsWithTag("Blood");
                     foreach (GameObject blood in raisingBlood)
                     {
                         blood.GetComponent<RaisingBlood>().Flood();
                         //Flood();
                     }
+                }
+                else if (hit.transform.gameObject.name == "Switch4")
+                {
+
                 }
             }
         }

@@ -321,8 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2a4b94d52ce4748893f31341c69d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 3
-  dragForce: 2
+  pushForce: 5
+  dragForce: 5
   maxRaycastDistance: 5
   isAttached: 0
   pushDirection: {x: 0, y: 0, z: 0}

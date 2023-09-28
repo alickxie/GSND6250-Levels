@@ -15713,6 +15713,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 40244278897048843, guid: 4cf29742dbcf0b24eb0268cf71e88041,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 40244278897048844, guid: 4cf29742dbcf0b24eb0268cf71e88041,
         type: 3}
       propertyPath: m_Height
