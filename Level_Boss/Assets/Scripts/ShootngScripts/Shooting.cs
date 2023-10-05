@@ -22,6 +22,9 @@ public class Shooting : MonoBehaviour
 
     bool readyToThrow;
 
+    [Header("Audio")]
+    public AudioSource pumpkinTray;
+
     private void Start()
     {
         readyToThrow = true;
@@ -78,6 +81,11 @@ public class Shooting : MonoBehaviour
         {
             // Increase total throws when the player enters the power-up zone
             totalThrows += throwsPerPowerUp;
+            // Play the pumpkinTray audio
+            if (pumpkinTray != null)
+            {
+                pumpkinTray.Play();
+            }
         }
     }
 }

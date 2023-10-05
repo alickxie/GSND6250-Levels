@@ -28,6 +28,13 @@ public class ProjectileAddon : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
+        else if (collision.gameObject.GetComponent<EvilPumpkin>() != null)
+        {
+            EvilPumpkin enemy = collision.gameObject.GetComponent<EvilPumpkin>();
+
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+        }
         //make sure projecttile stick to surface
         rb.isKinematic = true;
 

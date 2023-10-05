@@ -8,6 +8,9 @@ public class BasicEnemy : MonoBehaviour
     [Header("Stats")]
     public int health;
 
+    [Header("Audio")]
+    public AudioSource hitPumpkin;
+
     // Color in RGB corresponding to FF2590
     private Color lightColorOnHit = new Color(255f / 255f, 136f / 255f, 37f / 255f);
 
@@ -24,6 +27,7 @@ public class BasicEnemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        hitPumpkin.Play();
         if (health <= 0)
             ChangeLightColor();
     }
