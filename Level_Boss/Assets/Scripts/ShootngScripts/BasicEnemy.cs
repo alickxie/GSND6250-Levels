@@ -10,6 +10,7 @@ public class BasicEnemy : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource hitPumpkin;
+    public AudioSource spottedPlayerAudio;
 
     // Color in RGB corresponding to FF2590
     private Color lightColorOnHit = new Color(255f / 255f, 136f / 255f, 37f / 255f);
@@ -38,5 +39,9 @@ public class BasicEnemy : MonoBehaviour
         {
             pointLight.color = lightColorOnHit;
         }
+    }
+
+    void Update()
+    {
     }
 }
