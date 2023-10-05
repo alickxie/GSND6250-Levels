@@ -24,6 +24,11 @@ public class EnemyAiTutorial : MonoBehaviour
     public float sightRange, attackRange;
     private bool playerInSightRange, playerInAttackRange;
 
+    public AudioSource detectplayer;
+    public AudioSource startSFX;
+    
+    // 
+
     private void Start()
     {
         isPatrolling = true;
@@ -89,7 +94,13 @@ public class EnemyAiTutorial : MonoBehaviour
 
     private void ChasePlayer()
     {
+        if (!detectplayer.isPlaying)
+        {
+            detectplayer.Play();
+        }
+
         agent.SetDestination(player.position);
+        transform.LookAt(player);
     }
 
     private void AttackPlayer()

@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class TeleportationTrigger : MonoBehaviour
 {
-    // public Transform[] teleportationPoints;
-    // public Transform[] uniquePatrolPoints;
     public GameObject bossCopyOn;
-    public GameObject bossCopyOff;
+    public GameObject[] bossCopyOff;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,7 +11,10 @@ public class TeleportationTrigger : MonoBehaviour
         {
             Debug.Log("Player entered teleportation trigger");
             bossCopyOn.SetActive(true);
-            bossCopyOff.SetActive(false);
+            foreach (GameObject bossCopy in bossCopyOff)
+            {
+                bossCopy.SetActive(false);
+            }
         }
     }
 }
