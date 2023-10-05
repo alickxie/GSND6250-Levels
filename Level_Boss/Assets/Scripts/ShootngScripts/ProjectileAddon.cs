@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileAddon : MonoBehaviour
 {
-
+    public int damage;
     private Rigidbody rb;
     private bool targetHit;
     // Start is called before the first frame update
@@ -20,7 +20,14 @@ public class ProjectileAddon : MonoBehaviour
             return;
         else
             targetHit = true;
+        //check if you hit an enemy
+        if(collision.gameObject.GetComponent<BasicEnemy>() != null)
+        {
+            BasicEnemy enemy = collision.gameObject.GetComponent<BasicEnemy>();
 
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+        }
         //make sure projecttile stick to surface
         rb.isKinematic = true;
 
