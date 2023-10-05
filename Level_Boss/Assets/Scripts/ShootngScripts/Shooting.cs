@@ -13,8 +13,9 @@ public class Shooting : MonoBehaviour
     [Header("Settings")]
     public int totalThrows;
     public float throwCooldown;
+    public int throwsPerPowerUp;
 
-    [Header("Throwing")]
+[Header("Throwing")]
     public KeyCode throwKey = KeyCode.Mouse0;
     public float throwForce;
     public float throwUpwardForce;
@@ -68,5 +69,15 @@ public class Shooting : MonoBehaviour
     private void ResetThrow()
     {
         readyToThrow = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the player entered the power-up zone
+        if (other.CompareTag("PumpkinTray"))
+        {
+            // Increase total throws when the player enters the power-up zone
+            totalThrows += throwsPerPowerUp;
+        }
     }
 }
