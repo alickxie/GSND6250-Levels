@@ -102,6 +102,8 @@ MonoBehaviour:
   jumpForce: 4
   jumpCooldown: 0.25
   airMultiplier: 0.4
+  walkSpeed: 4
+  sprintSpeed: 8
   jumpKey: 32
   playerHeight: 2
   whatIsGround:

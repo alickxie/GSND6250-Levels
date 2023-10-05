@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-299502
+  m_Name: pb_Mesh36992
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 147577636}
   - component: {fileID: 147577635}
   - component: {fileID: 147577634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairTombInter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 150144135}
   - component: {fileID: 150144134}
   - component: {fileID: 150144133}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HighGround(Tomb)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-253830
+  m_Name: pb_Mesh36786
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1640,7 +1640,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-69802
+  m_Name: pb_Mesh37124
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1812,7 +1812,7 @@ GameObject:
   - component: {fileID: 251406331}
   - component: {fileID: 251406330}
   - component: {fileID: 251406329}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairHouseWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2454,7 +2454,7 @@ GameObject:
   - component: {fileID: 274641877}
   - component: {fileID: 274641876}
   - component: {fileID: 274641875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CenterTomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3527,7 +3527,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-249084
+  m_Name: pb_Mesh36970
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3694,7 +3694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402191604}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronGate(Right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3725,7 +3725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450130049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enviornment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3792,7 +3792,7 @@ GameObject:
   - component: {fileID: 484948810}
   - component: {fileID: 484948809}
   - component: {fileID: 484948808}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToMaze(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39454,7 +39454,7 @@ GameObject:
   - component: {fileID: 527660417}
   - component: {fileID: 527660416}
   - component: {fileID: 527660415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39798,7 +39798,7 @@ GameObject:
   - component: {fileID: 551148188}
   - component: {fileID: 551148187}
   - component: {fileID: 551148186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToHouse(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41165,7 +41165,7 @@ GameObject:
   - component: {fileID: 616493500}
   - component: {fileID: 616493499}
   - component: {fileID: 616493498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41501,7 +41501,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-314374
+  m_Name: pb_Mesh36938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41668,7 +41668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638857386}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronGate(Left)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41704,7 +41704,7 @@ GameObject:
   - component: {fileID: 690550151}
   - component: {fileID: 690550150}
   - component: {fileID: 690550149}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToTomb(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43057,6 +43057,80 @@ Transform:
   m_Father: {fileID: 450130049}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -38.146, z: 0}
+--- !u!1001 &732376814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 151827499319321073, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_Name
+      value: FPSPlayerV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.35479
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7900963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232834728237102464, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858875379918029390, guid: e739b688143cbbf45a172719bd68b8d1,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e739b688143cbbf45a172719bd68b8d1, type: 3}
 --- !u!1 &791903612
 GameObject:
   m_ObjectHideFlags: 0
@@ -43150,7 +43224,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &791903615
 MonoBehaviour:
@@ -43178,7 +43252,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-262986
+  m_Name: pb_Mesh37016
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43350,7 +43424,7 @@ GameObject:
   - component: {fileID: 851322889}
   - component: {fileID: 851322888}
   - component: {fileID: 851322887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronDoor(Left)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43694,7 +43768,7 @@ GameObject:
   - component: {fileID: 873110332}
   - component: {fileID: 873110331}
   - component: {fileID: 873110330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairTombWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44412,7 +44486,7 @@ GameObject:
   - component: {fileID: 904384079}
   - component: {fileID: 904384078}
   - component: {fileID: 904384077}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44756,7 +44830,7 @@ GameObject:
   - component: {fileID: 937826017}
   - component: {fileID: 937826016}
   - component: {fileID: 937826015}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairMazeWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45466,7 +45540,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-390506
+  m_Name: pb_Mesh36800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45630,7 +45704,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-445484
+  m_Name: pb_Mesh36684
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45794,7 +45868,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-304258
+  m_Name: pb_Mesh36730
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45958,7 +46032,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81282
+  m_Name: pb_Mesh36886
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46122,7 +46196,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-450570
+  m_Name: pb_Mesh36924
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46294,7 +46368,7 @@ GameObject:
   - component: {fileID: 1136829219}
   - component: {fileID: 1136829218}
   - component: {fileID: 1136829217}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairMazeInter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46638,7 +46712,7 @@ GameObject:
   - component: {fileID: 1210825350}
   - component: {fileID: 1210825349}
   - component: {fileID: 1210825348}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HighGround(Maze)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47576,7 +47650,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-407688
+  m_Name: pb_Mesh37034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47748,7 +47822,7 @@ GameObject:
   - component: {fileID: 1259320073}
   - component: {fileID: 1259320072}
   - component: {fileID: 1259320071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairTombWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48496,7 +48570,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-407686
+  m_Name: pb_Mesh36754
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -48668,7 +48742,7 @@ GameObject:
   - component: {fileID: 1281530188}
   - component: {fileID: 1281530187}
   - component: {fileID: 1281530186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49004,7 +49078,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-477140
+  m_Name: pb_Mesh36900
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49168,7 +49242,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-297138
+  m_Name: pb_Mesh37052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49332,7 +49406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-311870
+  m_Name: pb_Mesh37096
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49496,7 +49570,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-487196
+  m_Name: pb_Mesh36858
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49668,7 +49742,7 @@ GameObject:
   - component: {fileID: 1519546909}
   - component: {fileID: 1519546908}
   - component: {fileID: 1519546907}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50004,7 +50078,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-468658
+  m_Name: pb_Mesh37158
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50252,7 +50326,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-466220
+  m_Name: pb_Mesh36716
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50424,7 +50498,7 @@ GameObject:
   - component: {fileID: 1703398099}
   - component: {fileID: 1703398098}
   - component: {fileID: 1703398097}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50870,7 +50944,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-347772
+  m_Name: pb_Mesh36834
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -51042,7 +51116,7 @@ GameObject:
   - component: {fileID: 1863747533}
   - component: {fileID: 1863747532}
   - component: {fileID: 1863747531}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToMaze(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52757,7 +52831,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-475630
+  m_Name: pb_Mesh37066
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -52921,7 +52995,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-261448
+  m_Name: pb_Mesh36814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53093,7 +53167,7 @@ GameObject:
   - component: {fileID: 1905201367}
   - component: {fileID: 1905201366}
   - component: {fileID: 1905201365}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53437,7 +53511,7 @@ GameObject:
   - component: {fileID: 1955051603}
   - component: {fileID: 1955051602}
   - component: {fileID: 1955051601}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairMazeWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54217,80 +54291,6 @@ Transform:
   m_Father: {fileID: 450130049}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1958374439
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6806559265811352347, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_Name
-      value: FPSPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352348, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_StepOffset
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806559265811352349, guid: 23b3e4fb5502a994b83c11568100d565,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 23b3e4fb5502a994b83c11568100d565, type: 3}
 --- !u!1 &1965447086
 GameObject:
   m_ObjectHideFlags: 0
@@ -54305,7 +54305,7 @@ GameObject:
   - component: {fileID: 1965447089}
   - component: {fileID: 1965447088}
   - component: {fileID: 1965447087}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToHouse(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55672,7 +55672,7 @@ GameObject:
   - component: {fileID: 2002598060}
   - component: {fileID: 2002598059}
   - component: {fileID: 2002598058}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HighGround(House)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56884,7 +56884,7 @@ GameObject:
   - component: {fileID: 2003692144}
   - component: {fileID: 2003692143}
   - component: {fileID: 2003692142}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LowGround(Top)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57982,7 +57982,7 @@ GameObject:
   - component: {fileID: 2004261513}
   - component: {fileID: 2004261512}
   - component: {fileID: 2004261511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronFence (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58318,7 +58318,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-354658
+  m_Name: pb_Mesh37174
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58482,7 +58482,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-310066
+  m_Name: pb_Mesh36698
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58818,7 +58818,7 @@ GameObject:
   - component: {fileID: 2048566438}
   - component: {fileID: 2048566437}
   - component: {fileID: 2048566436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IronDoor(Right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59162,7 +59162,7 @@ GameObject:
   - component: {fileID: 2060104574}
   - component: {fileID: 2060104573}
   - component: {fileID: 2060104572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairHouseWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59910,7 +59910,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-464426
+  m_Name: pb_Mesh36954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60082,7 +60082,7 @@ GameObject:
   - component: {fileID: 2072988590}
   - component: {fileID: 2072988589}
   - component: {fileID: 2072988588}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairToTomb(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61441,7 +61441,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-461576
+  m_Name: pb_Mesh36872
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -95692,7 +95692,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-487982
+  m_Name: pb_Mesh37144
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -95856,7 +95856,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-322506
+  m_Name: pb_Mesh37110
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -96020,7 +96020,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-383682
+  m_Name: pb_Mesh37082
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
