@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Shooting : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Shooting : MonoBehaviour
     public Transform attackPoint;
     public GameObject objectToThrow;
 
-    [Header("Setting")]
+    [Header("Settings")]
     public int totalThrows;
     public float throwCooldown;
 
@@ -20,50 +21,52 @@ public class Shooting : MonoBehaviour
 
     bool readyToThrow;
 
-    // Start is called before the first frame update
     private void Start()
     {
         readyToThrow = true;
     }
-    // Update is called once per frame
+
     private void Update()
     {
-        if(Input.GetKeyDown(throwKey)&&readyToThrow && totalThrows >0)
+        if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
         }
     }
+
     private void Throw()
     {
         readyToThrow = false;
-        //instantiate objecte to throw
+
+        // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
 
-        //get rigidbody component
+        // get rigidbody component
         Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
 
-        //calculate directioon
+        // calculate direction
         Vector3 forceDirection = cam.transform.forward;
 
         RaycastHit hit;
-        if(Physics.Raycast(cam.position, cam.forward, out hit, 500f))
+
+        if (Physics.Raycast(cam.position, cam.forward, out hit, 500f))
         {
             forceDirection = (hit.point - attackPoint.position).normalized;
         }
 
-        //add force
+        // add force
         Vector3 forceToAdd = forceDirection * throwForce + transform.up * throwUpwardForce;
 
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
         totalThrows--;
 
-        //implement throwCooldown
+        // implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
     }
+
     private void ResetThrow()
     {
         readyToThrow = true;
     }
-
 }
