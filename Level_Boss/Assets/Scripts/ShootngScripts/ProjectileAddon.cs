@@ -11,9 +11,10 @@ public class ProjectileAddon : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        StartCoroutine(DestroyAfterTime());
     }
 
-    private void OnCollisionEnter (Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         //make sure only to stick to the first target you hit
         if (targetHit)
@@ -21,7 +22,7 @@ public class ProjectileAddon : MonoBehaviour
         else
             targetHit = true;
         //check if you hit an enemy
-        if(collision.gameObject.GetComponent<BasicEnemy>() != null)
+        if (collision.gameObject.GetComponent<BasicEnemy>() != null)
         {
             BasicEnemy enemy = collision.gameObject.GetComponent<BasicEnemy>();
 
@@ -35,6 +36,13 @@ public class ProjectileAddon : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
+        else if (collision.gameObject.GetComponent<EnemyAi>() != null)
+        {
+            EnemyAi enemy = collision.gameObject.GetComponent<EnemyAi>();
+
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+        }
         //make sure projecttile stick to surface
         rb.isKinematic = true;
 
@@ -42,9 +50,15 @@ public class ProjectileAddon : MonoBehaviour
         transform.SetParent(collision.transform);
     }
 
+    IEnumerator DestroyAfterTime()
+    {
+        yield return new WaitForSeconds(10);
+        Destroy(gameObject);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

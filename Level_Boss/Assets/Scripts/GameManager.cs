@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int bosshealth = 100;
 
-    // Update is called once per frame
-    void Update()
+    public void BossTakeDamage(int damage)
     {
-        
+        bosshealth -= damage;
+
+        if (bosshealth <= 0)
+        {
+            Debug.Log("Boss is dead");
+        }
     }
 }

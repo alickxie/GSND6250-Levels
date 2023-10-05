@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2489841472725001783}
   - component: {fileID: 2489841472725001782}
   - component: {fileID: 2489841472725001781}
+  - component: {fileID: 5115683183987786987}
   m_Layer: 0
   m_Name: PumpKingAi (Center)
   m_TagString: Untagged
@@ -62,6 +63,9 @@ MonoBehaviour:
   attackRange: 4
   detectplayer: {fileID: 2676360727057881163}
   startSFX: {fileID: 8462097763966788950}
+  damageSFX: {fileID: 6320349702725093559}
+  gameManager: {fileID: 0}
+  pointLight: {fileID: 6964196045738681155}
 --- !u!195 &2489841472725001781
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84,6 +88,19 @@ NavMeshAgent:
   m_BaseOffset: 0.018705051
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &5115683183987786987
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2489841472725001780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.7085649
+  m_Center: {x: 2.3136218e-16, y: 3.5192742, z: -0.07878065}
 --- !u!1001 &2976693878098843219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,6 +175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 894809677387140632, guid: fb9676689da559a459d1de9769cfeb1d,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 894809677387140632, guid: fb9676689da559a459d1de9769cfeb1d,
+        type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
@@ -169,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 6638374409477780229, guid: fb9676689da559a459d1de9769cfeb1d,
         type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6638374409477780229, guid: fb9676689da559a459d1de9769cfeb1d,
         type: 3}
@@ -192,6 +214,18 @@ AudioSource:
 --- !u!4 &3353657208192411042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 560067282933773297, guid: fb9676689da559a459d1de9769cfeb1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2976693878098843219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6320349702725093559 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9149401150817410788, guid: fb9676689da559a459d1de9769cfeb1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2976693878098843219}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &6964196045738681155 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 5326241206093903120, guid: fb9676689da559a459d1de9769cfeb1d,
     type: 3}
   m_PrefabInstance: {fileID: 2976693878098843219}
   m_PrefabAsset: {fileID: 0}
