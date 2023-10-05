@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public CharacterController controller;
-    public float gravity;
 
     [Header("Movement")]
-    private float moveSpeed;
-    public float walkSpeed;
-    public float sprintSpeed;
+    public float moveSpeed;
     public float groundDrag;
 
-    [Header("Jump")]
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
@@ -21,7 +16,6 @@ public class PlayerMove : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
 
     [Header("Ground Check")]
     public float playerHeight;
@@ -37,36 +31,6 @@ public class PlayerMove : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    public MovementState state;
-    public enum MovementState
-    {
-        walking,
-        sprinting,
-        air
-    }
-
-    private void StateHandler()
-    {
-        //Mode - Sprinting
-        if(grounded && Input.GetKey(sprintKey))
-        {
-            state = MovementState.sprinting;
-            moveSpeed = sprintSpeed;
-        }
-
-        //Mode - Walking
-        else if (grounded)
-        {
-            state = MovementState.walking;
-            moveSpeed = walkSpeed;
-        }
-        //Mode - Air
-        else
-        {
-            state = MovementState.air;
-        }
-    }
-
 
     // Start is called before the first frame update
     private void Start()
@@ -82,20 +46,20 @@ public class PlayerMove : MonoBehaviour
 
         MyInput();
         SpeedControl();
-        StateHandler();
 
         //handle drag
         if (grounded)
         {
-            //Debug.Log("grounded");
+            Debug.Log("grounded");
             rb.drag = groundDrag;
-            //Debug.Log("yeah");
+            Debug.Log("yeah");
         }
         else
         {
             rb.drag = 0;
             //Debug.Log("NO");
         }
+
     }
 
     private void FixedUpdate()
@@ -129,10 +93,6 @@ public class PlayerMove : MonoBehaviour
         else if (!grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
-            // Update the y-component of velocity based on gravity
-            //Vector3 velocity = rb.velocity;
-            //velocity.y += gravity * Time.deltaTime;
-            //rb.velocity = velocity;
         }
 
     }
