@@ -3,7 +3,22 @@ guid: 090020265a1ff484ab53b40be3339cc4
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassMat
+    second: {fileID: 2100000, guid: df5da2df11d0f634ea534d2d0042a31b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampMat
+    second: {fileID: 2100000, guid: 28a7f37a921b529458ce2ce32fd35d36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RingMat
+    second: {fileID: 2100000, guid: 28a7f37a921b529458ce2ce32fd35d36, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

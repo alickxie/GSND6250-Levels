@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00fa9c6c601e42f4488b922fd953206a
+guid: 57dd2877b0bc36c44b0bb2be2c7969ef
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,18 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BodyMat
-    second: {fileID: 2100000, guid: f4c108c15bfa8ee4995a6657c7fe1b94, type: 2}
+      name: GlassMat
+    second: {fileID: 2100000, guid: ce1a3bb8df1bcfb438c87ab43ecc06a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampMat
+    second: {fileID: 2100000, guid: 28a7f37a921b529458ce2ce32fd35d36, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: RingMat
-    second: {fileID: 2100000, guid: a9804a986b894a14fa46e8f120e8d193, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WingMat
-    second: {fileID: 2100000, guid: f4c108c15bfa8ee4995a6657c7fe1b94, type: 2}
+    second: {fileID: 2100000, guid: 28a7f37a921b529458ce2ce32fd35d36, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
