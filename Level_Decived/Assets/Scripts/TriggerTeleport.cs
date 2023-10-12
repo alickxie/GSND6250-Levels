@@ -18,11 +18,16 @@ public class TriggerTeleport : MonoBehaviour
         }
     }
 
+    public void SetTrigger()
+    {
+        teleportable = true;
+    }
+
     private void TeleportPlayer(Transform playerTransform)
     {
         // Move the player to the destination using the Character Controller
         characterController.enabled = false;
-        characterController.transform.position= new Vector3( characterController.transform.position.x, destination.position.y,  characterController.transform.position.z);
+        characterController.transform.position = new Vector3(characterController.transform.position.x, destination.position.y, characterController.transform.position.z);
         characterController.enabled = true;
 
         // Allow teleportation again
