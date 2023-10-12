@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public LampColorChnage lampColorChnage;
     public LampColorChnage1 lampColorChnage1;
     bool singleUse = true;
+    public AudioSource correctSound;
 
     // Start is called before the first frame update
     void Start()
@@ -18,16 +19,31 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lampColorChnage.GetColor() == Color.red && lampColorChnage1.GetColor() == Color.yellow && singleUse)
+        if (lampColorChnage.GetColor() == Color.red && lampColorChnage1.GetColor() == Color.yellow)
         {
-            LightPuzzle();
-            singleUse = false;
+            LightPuzzle(true);
+            PlayCorrectSound();
+        }
+
+        if (lampColorChnage.GetColor() != Color.red || lampColorChnage1.GetColor() != Color.yellow)
+        {
+            LightPuzzle(false);
+            singleUse = true;
         }
     }
 
 
-    public void LightPuzzle()
+    public void PlayCorrectSound()
     {
-        triggerTeleport.SetTrigger();
+        if (singleUse)
+        {
+            correctSound.Play();
+            singleUse = false;
+        }
+    }
+
+    public void LightPuzzle(bool x)
+    {
+        triggerTeleport.SetTrigger(x);
     }
 }

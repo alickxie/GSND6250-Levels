@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class TriggerTeleport : MonoBehaviour
@@ -18,9 +19,9 @@ public class TriggerTeleport : MonoBehaviour
         }
     }
 
-    public void SetTrigger()
+    public void SetTrigger(bool x)
     {
-        teleportable = true;
+        teleportable = x;
     }
 
     private void TeleportPlayer(Transform playerTransform)
