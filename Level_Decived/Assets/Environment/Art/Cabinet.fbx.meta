@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00fa9c6c601e42f4488b922fd953206a
+guid: 2a9ea63c45bfd0e4aa1c5551d8df285f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BodyMat
-    second: {fileID: 2100000, guid: f4c108c15bfa8ee4995a6657c7fe1b94, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RingMat
-    second: {fileID: 2100000, guid: a9804a986b894a14fa46e8f120e8d193, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WingMat
-    second: {fileID: 2100000, guid: f4c108c15bfa8ee4995a6657c7fe1b94, type: 2}
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 0f30d95fb95c6054fba3268af76b4c59, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
