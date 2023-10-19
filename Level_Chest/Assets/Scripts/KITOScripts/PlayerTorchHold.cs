@@ -6,6 +6,7 @@ public class PlayerTorchHold : MonoBehaviour
 {
     public Transform torchHoldingPosition;  // The position where the torch will be held
     public DoorMover doorMover;  // Reference to the DoorMover script attached to the door
+    private bool okToMove = true;
 
     private GameObject torch;
     // Start is called before the first frame update
@@ -22,14 +23,16 @@ public class PlayerTorchHold : MonoBehaviour
             // Set the torch's position and parent to the holding position
             torch.transform.position = torchHoldingPosition.position;
             torch.transform.parent = torchHoldingPosition;
-            torch.SetActive(true);
+            //torch.SetActive(true);
+            // Move the door using the DoorMover script
+            if (doorMover != null && okToMove)
+            {
+                //Debug.Log("Step1");
+                doorMover.MoveDoor();
+                okToMove = false;
+            }
         }
 
-        // Move the door using the DoorMover script
-        if (doorMover != null)
-        {
-            doorMover.MoveDoor();
-        }
     }
 
     // Function to set the torch the player is holding

@@ -19,7 +19,7 @@ public class Torch : MonoBehaviour
         if (Vector3.Distance(transform.position, torchHolder.transform.position) < 2f && Input.GetKeyDown(KeyCode.E))
         {
             // Disable the torch and notify the player that they are now holding the torch
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             torchHolder.GetComponent<PlayerTorchHold>().SetTorch(gameObject);
         }
     }
