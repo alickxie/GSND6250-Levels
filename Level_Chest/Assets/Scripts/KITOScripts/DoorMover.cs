@@ -10,6 +10,7 @@ public class DoorMover : MonoBehaviour
     private float moveStartTime;
     private Vector3 initialPosition;
     private Vector3 targetPosition;
+    public AudioSource doorAudioSource; // Reference to the Audio Source for the door moving sound
 
     public void MoveDoor()
     {
@@ -19,6 +20,9 @@ public class DoorMover : MonoBehaviour
 
         // Store the start time
         moveStartTime = Time.time;
+
+        // Play the door moving sound
+        doorAudioSource.Play();
     }
 
     // Start is called before the first frame update
@@ -30,7 +34,7 @@ public class DoorMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if it's time to move the door
+                // Check if it's time to move the door
         if (Time.time - moveStartTime < moveDuration)
         {
             // Calculate the lerp factor
