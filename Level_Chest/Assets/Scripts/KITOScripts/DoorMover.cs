@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class DoorMover : MonoBehaviour
 {
-    public float moveAmount = 2.0f;  // Amount to move the door (adjust as needed)
+    public float moveAmount;  // Amount to move the door (adjust as needed)
+    public float moveDuration;
+
+    private float moveStartTime;
+    private Vector3 initialPosition;
+    private Vector3 targetPosition;
 
     public void MoveDoor()
     {
-        // Move the door to the right
-        Debug.Log("Open");
-        transform.Translate(Vector3.right * moveAmount);
+        // Store the initial position and calculate the target position
+        initialPosition = transform.position;
+        targetPosition = transform.position + new Vector3(0, 0, moveAmount);
 
+        // Store the start time
+        moveStartTime = Time.time;
     }
 
     // Start is called before the first frame update
@@ -23,6 +30,14 @@ public class DoorMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Check if it's time to move the door
+        if (Time.time - moveStartTime < moveDuration)
+        {
+            // Calculate the lerp factor
+            float t = (Time.time - moveStartTime) / moveDuration;
+
+            // Interpolate between the initial and target positions
+            transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
+        }
     }
 }
