@@ -39,7 +39,7 @@ public class BrazierR : MonoBehaviour
         isLit = true;
 
         // Call the RaiseStairs method from the StairController script
-        stairController.RaiseStairs();
+        stairController.RaiseStairsOneByOne();
 
     }
 

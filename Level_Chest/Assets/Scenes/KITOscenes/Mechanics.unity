@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 202.48062, g: 349.38257, b: 805.89185, a: 1}
+  m_IndirectSpecularColor: {r: 202.47775, g: 349.37674, b: 805.88354, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19102,7 +19102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stairCubes:
-  - {fileID: 450350339}
   - {fileID: 1618234676}
   - {fileID: 2003601421}
   - {fileID: 755579762}
@@ -19111,6 +19110,17 @@ MonoBehaviour:
   - {fileID: 446265847}
   - {fileID: 2117014397}
   - {fileID: 729778588}
+  raiseAmount: 8
+  raiseSpeed: 1
+  targetHeights:
+  - -11.25
+  - -10.25
+  - -9.25
+  - -8.25
+  - -7.25
+  - -6.25
+  - -5.25
+  - -4.25
 --- !u!4 &819531127
 Transform:
   m_ObjectHideFlags: 0
@@ -44298,6 +44308,7 @@ MonoBehaviour:
   FireAudioSource: {fileID: 1196177447}
   torchAudioSource: {fileID: 1196177451}
   stairController: {fileID: 819531126}
+  isLit: 0
 --- !u!82 &1196177451
 AudioSource:
   m_ObjectHideFlags: 0
