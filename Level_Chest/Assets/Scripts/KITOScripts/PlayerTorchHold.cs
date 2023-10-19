@@ -8,7 +8,9 @@ public class PlayerTorchHold : MonoBehaviour
     public DoorMover doorMover;  // Reference to the DoorMover script attached to the door
     private bool okToMove = true;
 
-    private GameObject torch;
+    public GameObject torch;
+    public GameObject brazier;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +41,11 @@ public class PlayerTorchHold : MonoBehaviour
     public void SetTorch(GameObject torchObject)
     {
         torch = torchObject;
+    }
+
+    // Function to set the reference to the brazier in the other room
+    public void SetBrazier(GameObject brazierObject)
+    {
+        brazier = brazierObject;
     }
 }

@@ -6,6 +6,7 @@ public class TorchLightController : MonoBehaviour
 {
     public float delayBeforeLighting;  // Time delay before lighting (adjust as needed)
     public ParticleSystem torchParticleSystem;  // Reference to the Particle System
+    public AudioSource FireAudioSource;
     public AudioSource torchAudioSource; // Reference to the Audio Source
 
     private bool isLit = false;
@@ -13,6 +14,7 @@ public class TorchLightController : MonoBehaviour
     {
         // Disable the Particle System initially
         torchParticleSystem.Stop();
+        FireAudioSource.Stop();
     }
 
     public IEnumerator LightTorch()
@@ -24,6 +26,7 @@ public class TorchLightController : MonoBehaviour
 
         // Play the audio when the torch lights up
         torchAudioSource.Play();
+        FireAudioSource.Play();
 
         isLit = true;
     }

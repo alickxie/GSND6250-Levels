@@ -5,11 +5,13 @@ using UnityEngine;
 public class Torch : MonoBehaviour
 {
     public GameObject torchHolder;  // The object representing the torch holder
+    public AudioSource trapAudioSource; // Reference to the Audio Source for impact sound
+    private bool trapSoundPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        trapAudioSource.Stop(); // Make sure the impact audio source starts in a stopped state
     }
 
     // Update is called once per frame
@@ -21,6 +23,11 @@ public class Torch : MonoBehaviour
             // Disable the torch and notify the player that they are now holding the torch
             //gameObject.SetActive(false);
             torchHolder.GetComponent<PlayerTorchHold>().SetTorch(gameObject);
+            if (!trapAudioSource.isPlaying && !trapSoundPlayed)
+            {
+                trapAudioSource.Play();
+                trapSoundPlayed = true;
+            }
         }
     }
 }
