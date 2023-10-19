@@ -5,36 +5,40 @@ using UnityEngine;
 public class StairController : MonoBehaviour
 {
     public GameObject[] stairCubes;
+    public float raiseSpeed = 1.0f; // Adjust the speed as needed
+    private float[] targetHeights;
     private bool stairsRaised = false;
-    private int currentCubeIndex = 0;
 
-    public void RaiseStairs()
+    public void Start()
     {
-        if (currentCubeIndex < stairCubes.Length)
+        targetHeights = new float[stairCubes.Length];
+        for (int i = 0; i < stairCubes.Length; i++)
         {
-            // Move the current cube up (you can use Translate or other methods)
-            float raiseAmount = 1.0f; // Adjust this value as needed
-            stairCubes[currentCubeIndex].transform.Translate(Vector3.up * raiseAmount);
-
-            currentCubeIndex++;
-
-            if (currentCubeIndex == stairCubes.Length)
-            {
-                stairsRaised = true;
-            }
+            targetHeights[i] = stairCubes[i].transform.position.y + i; // Adjust the raise offset
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Update()
     {
-
+        if (!stairsRaised)
+        {
+            RaiseStairs();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RaiseStairs()
     {
+        for (int i = 0; i < stairCubes.Length; i++)
+        {
+            float step = raiseSpeed * Time.deltaTime;
+            stairCubes[i].transform.position = Vector3.MoveTowards(stairCubes[i].transform.position, new Vector3(stairCubes[i].transform.position.x, targetHeights[i], stairCubes[i].transform.position.z), step);
 
+            if (stairCubes[i].transform.position.y >= targetHeights[i])
+            {
+                stairsRaised = true;
+            }
+            Debug.Log($"Stair {i} Position: {stairCubes[i].transform.position.y} Target Height: {targetHeights[i]}");
+        }
     }
 }
 

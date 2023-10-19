@@ -11,7 +11,7 @@ public class BrazierR : MonoBehaviour
 
     public StairController stairController; // Reference to the StairController script
 
-    private bool isLit = false;
+    public bool isLit = false;
     // Start is called before the first frame update
     public void Start()
     {
