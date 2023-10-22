@@ -39,7 +39,8 @@ public class BrazierR : MonoBehaviour
         isLit = true;
 
         // Call the RaiseStairs method from the StairController script
-        stairController.RaiseStairsOneByOne();
+        stairController.RaiseStairs();
+        LightMove.instance.ShowLight();
 
     }
 
@@ -59,8 +60,14 @@ public class BrazierR : MonoBehaviour
             // Set the torch as a child of the brazier's position
             torch.transform.parent = brazierPosition;
 
+            torchParticleSystem.Stop();
             // Deactivate the torch's mesh renderer to hide it
-            //.GetComponent<MeshRenderer>().enabled = false;
+            torch.GetComponent<MeshRenderer>().enabled = false;
+            Destroy(torch);
+
+            
+
+
         }
     }
 }

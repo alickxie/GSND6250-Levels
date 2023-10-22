@@ -11,29 +11,46 @@ public class StairController : MonoBehaviour
 
     private void Update()
     {
-        if (!stairsRaised && Input.GetKeyDown(KeyCode.E))
-        {
-            StartCoroutine(RaiseStairsOneByOne());
-        }
+        // if (!stairsRaised && Input.GetKeyDown(KeyCode.E))
+        // {
+        //     RaiseStairs();
+        // }
     }
 
-    public IEnumerator RaiseStairsOneByOne()
+    public void RaiseStairs()
     {
+        GameManager.instance.StairRaising();
+
         for (int i = 0; i < stairCubes.Length; i++)
         {
-            float step = raiseSpeed * Time.deltaTime;
             float initialHeight = stairCubes[i].transform.position.y;
             float targetHeight = targetHeights[i];
 
-            while (stairCubes[i].transform.position.y < targetHeight)
-            {
-                stairCubes[i].transform.Translate(Vector3.up * step);
-                yield return null;
-            }
+            // Calculate the distance to move and the time needed
+            float distanceToMove = targetHeight - initialHeight;
+            float moveDuration = distanceToMove / raiseSpeed;
 
-            yield return new WaitForSeconds(1.0f); // Adjust the delay between stairs if needed
+            // Move the stair to its target height
+            StartCoroutine(MoveStair(stairCubes[i], targetHeight, moveDuration));
+        }
+        stairsRaised = true;
+    }
+
+    private IEnumerator MoveStair(GameObject stair, float targetHeight, float moveDuration)
+    {
+        float elapsedTime = 0f;
+        float initialHeight = stair.transform.position.y;
+
+        while (elapsedTime < moveDuration)
+        {
+            float height = Mathf.Lerp(initialHeight, targetHeight, elapsedTime / moveDuration);
+            stair.transform.position = new Vector3(stair.transform.position.x, height, stair.transform.position.z);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
 
-        stairsRaised = true;
+        // Make sure the stair is exactly at the target height
+        stair.transform.position = new Vector3(stair.transform.position.x, targetHeight, stair.transform.position.z);
     }
 }
