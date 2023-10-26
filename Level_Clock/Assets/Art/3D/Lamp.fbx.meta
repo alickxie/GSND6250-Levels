@@ -19,16 +19,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Glass
     second: {fileID: 2100000, guid: ef82104bec8e1ab4384da984eecceb07, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PoleUV
-    second: {fileID: 2100000, guid: 8cffaf2aa1823d940831ceceb3504bd5, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: UV_Final
-    second: {fileID: 2800000, guid: 55545acce222e3b438c80b07f657ee18, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
