@@ -5,6 +5,8 @@ using UnityEngine;
 public class GoggleOpen : MonoBehaviour
 {
     public GameObject goggle;
+    public GameObject OldLences;
+    public GameObject PartOldLences;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +23,14 @@ public class GoggleOpen : MonoBehaviour
             if (goggle.activeSelf)
             {
                 goggle.SetActive(false);
+                OldLences.SetActive(true);
+                PartOldLences.SetActive(false);
             }
             else
             {
                 goggle.SetActive(true);
+                OldLences.SetActive(false);
+                PartOldLences.SetActive(true);
             }
         }
     }
