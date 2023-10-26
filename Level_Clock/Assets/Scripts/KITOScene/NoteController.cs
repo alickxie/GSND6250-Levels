@@ -23,7 +23,7 @@ public class NoteController : MonoBehaviour
 
     [Space(10)]
     [SerializeField] private UnityEvent openEvent; // Create and set up this Unity Event in the Inspector.
-    private bool isOpen = false;
+    public bool isOpen = false;
 
 
     public void ShowNote()
@@ -57,7 +57,7 @@ public class NoteController : MonoBehaviour
         {
             if (Input.GetKeyDown(closeKey))
             {
-                DisableNote();
+                Invoke("DisableNote",0.1f);
             }
         }
     }

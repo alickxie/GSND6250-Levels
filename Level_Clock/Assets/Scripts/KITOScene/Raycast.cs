@@ -67,7 +67,9 @@ public class Raycast : MonoBehaviour
         }
         if (_noteController != null)
         {
-            if (Input.GetKeyDown(interactKey))
+            bool noteIsOpen = _noteController.isOpen;
+            Debug.Log(noteIsOpen);
+            if (Input.GetKeyDown(interactKey)&&!noteIsOpen)
             {
                 _noteController.ShowNote();
             }
