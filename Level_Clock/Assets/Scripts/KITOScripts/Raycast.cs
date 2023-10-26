@@ -17,12 +17,15 @@ public class Raycast : MonoBehaviour
     [Header("Input Key")]
     [SerializeField] private KeyCode interactKey;
 
-    //add
+    //add hold gear
     [Header("Holding Position")]
     [SerializeField] private Transform HoldingPosition;
     [SerializeField] private LayerMask PickupMask;
     private Rigidbody CurrentObject;
     private int _pickupController;
+
+    //add globe
+    private string _globeController;
 
     // Start is called before the first frame update
     void Start()
@@ -35,19 +38,6 @@ public class Raycast : MonoBehaviour
     {
         if (Physics.Raycast(_camera.ViewportToWorldPoint(new Vector3(0.5f,0.5f)),transform.forward, out RaycastHit hit, rayLength))
         {
-            int pickupableItem = hit.collider.gameObject.layer;
-            //Debug.Log(pickupableItem);
-            if(pickupableItem == 18)
-            {
-                _pickupController = pickupableItem;
-                HeighlightCrosshair(true);
-            }
-            else
-            {
-                ClearPickup();
-            }
-
-
             var readableItem = hit.collider.GetComponent<NoteController>();
             //Debug.Log(readableItem);
             if (readableItem != null)
@@ -59,11 +49,36 @@ public class Raycast : MonoBehaviour
             {
                 ClearNote();
             }
+
+            int pickupableItem = hit.collider.gameObject.layer;
+            //Debug.Log(pickupableItem);
+            if (pickupableItem == 18)
+            {
+                _pickupController = pickupableItem;
+                HeighlightCrosshair(true);
+            }
+            else
+            {
+                ClearPickup();
+            }
+
+            var globeItem = hit.collider.gameObject.name;
+            //Debug.Log(globeItem);
+            if (globeItem == "UpperHolder")
+            {
+                _globeController = globeItem;
+                HeighlightCrosshair(true);
+            }
+            else
+            {
+                ClearGlobe();
+            }
         }
         else
         {
             ClearNote();
             ClearPickup();
+            ClearGlobe();
         }
         if (_noteController != null)
         {
@@ -88,24 +103,18 @@ public class Raycast : MonoBehaviour
                 CurrentObject.useGravity = false;
             }
         }
-        //add
-
-        /*
-        if (Input.GetKeyDown(interactKey))
+        if (_globeController == "UpperHolder")
         {
-            if (CurrentObject)
+            if (Input.GetKeyDown(interactKey))
             {
-                CurrentObject.useGravity = true;
-                CurrentObject = null;
-                return;
+                GlobeRotation globeRotation = hit.collider.gameObject.GetComponent<GlobeRotation>();
+                if (globeRotation != null)
+                {
+                    // Call the RotateUpperHolder method
+                    globeRotation.RotateUpperHolder();
+                }
             }
-            if (Physics.Raycast(_camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), transform.forward, out RaycastHit hitInfo, rayLength, PickupMask))
-            {
-                CurrentObject = hitInfo.rigidbody;
-                CurrentObject.useGravity = false;
-            }
-        }*/
-
+        }
     }
 
     void ClearNote()
@@ -122,6 +131,15 @@ public class Raycast : MonoBehaviour
         {
             HeighlightCrosshair(false);
             _pickupController = 0;
+        }
+    }
+
+    void ClearGlobe()
+    {
+        if(_globeController != null)
+        {
+            HeighlightCrosshair(false);
+            _globeController = null;
         }
     }
 
