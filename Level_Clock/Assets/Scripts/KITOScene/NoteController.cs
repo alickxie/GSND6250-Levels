@@ -19,7 +19,7 @@ public class NoteController : MonoBehaviour
     [SerializeField] private TMP_Text noteTextAreaUI;
 
     [Space(10)]
-    [SerializeField] [TextArea] private string noteText;
+    [SerializeField][TextArea] private string noteText;
 
     [Space(10)]
     [SerializeField] private UnityEvent openEvent; // Create and set up this Unity Event in the Inspector.
@@ -28,11 +28,13 @@ public class NoteController : MonoBehaviour
 
     public void ShowNote()
     {
+
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
         openEvent.Invoke();
         DisablePlayer(true);
         isOpen = true;
+
     }
 
     void DisableNote()
@@ -46,6 +48,7 @@ public class NoteController : MonoBehaviour
     void DisablePlayer(bool disable)
     {
         player.enabled = !disable;
+        MouseLook.instance.LockCursor(disable);
     }
 
     private void Update()
