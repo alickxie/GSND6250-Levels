@@ -27,6 +27,9 @@ public class Raycast : MonoBehaviour
     //add globe
     private string _globeController;
 
+    //add any goggle reference here
+    private string _goggleController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,7 @@ public class Raycast : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Physics.Raycast(_camera.ViewportToWorldPoint(new Vector3(0.5f,0.5f)),transform.forward, out RaycastHit hit, rayLength))
+        if (Physics.Raycast(_camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), transform.forward, out RaycastHit hit, rayLength))
         {
             var readableItem = hit.collider.GetComponent<NoteController>();
             //Debug.Log(readableItem);
@@ -73,6 +76,19 @@ public class Raycast : MonoBehaviour
             {
                 ClearGlobe();
             }
+
+            //add goggle part
+            var goggleItem = hit.collider.gameObject.name;
+            if (goggleItem == "goggle")
+            {
+                _globeController = goggleItem;
+                HeighlightCrosshair(true);
+            }
+            else
+            {
+                ClearGoggle();
+            }
+
         }
         else
         {
@@ -84,12 +100,12 @@ public class Raycast : MonoBehaviour
         {
             bool noteIsOpen = _noteController.isOpen;
             Debug.Log(noteIsOpen);
-            if (Input.GetKeyDown(interactKey)&&!noteIsOpen)
+            if (Input.GetKeyDown(interactKey) && !noteIsOpen)
             {
                 _noteController.ShowNote();
             }
         }
-        if(_pickupController == 18)
+        if (_pickupController == 18)
         {
             if (Input.GetKeyDown(interactKey))
             {
@@ -112,11 +128,20 @@ public class Raycast : MonoBehaviour
                 {
                     // Call the RotateUpperHolder method
                     globeRotation.RotateUpperHolder();
+                    //disable collider here
                 }
             }
         }
-    }
 
+        //add GOGGLEGOGGLE
+        if (_goggleController == "goggle")
+        {
+            if (Input.GetKeyDown(interactKey))
+            {
+                //get the goggle or call goggle function here
+            }
+        }
+    }
     void ClearNote()
     {
         if (_noteController != null)
@@ -125,6 +150,7 @@ public class Raycast : MonoBehaviour
             _noteController = null;
         }
     }
+
     void ClearPickup()
     {
         if(_pickupController == 18 )
@@ -140,6 +166,14 @@ public class Raycast : MonoBehaviour
         {
             HeighlightCrosshair(false);
             _globeController = null;
+        }
+    }
+    void ClearGoggle()
+    {
+        if (_goggleController != null)
+        {
+            HeighlightCrosshair(false);
+            _goggleController = null;
         }
     }
 
