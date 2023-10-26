@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GearMat
-    second: {fileID: 2100000, guid: 3e171d7827f1d9a4e903c8bf651d44e4, type: 2}
+    second: {fileID: 2100000, guid: bd7d5ecaa0536d442a73b055369c725a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
