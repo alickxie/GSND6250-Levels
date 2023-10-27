@@ -28,13 +28,12 @@ public class NoteController : MonoBehaviour
 
     public void ShowNote()
     {
-
         noteTextAreaUI.text = noteText;
         noteCanvas.SetActive(true);
+        Debug.Log(noteCanvas);
         openEvent.Invoke();
         DisablePlayer(true);
         isOpen = true;
-
     }
 
     void DisableNote()
