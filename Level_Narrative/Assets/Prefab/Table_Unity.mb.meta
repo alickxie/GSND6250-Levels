@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e94499d3d886cd641a477d9412ab789d
+guid: e125321b3ffefa646a992ea829f0573d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface1
+      name: DrawerMat
+    second: {fileID: 2100000, guid: 3da44bb1ca22ef440b570baf587306dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandleMat
     second: {fileID: 2100000, guid: cc9573c11c5de7d44869d3ad7e89d0c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface2
-    second: {fileID: 2100000, guid: cc9573c11c5de7d44869d3ad7e89d0c4, type: 2}
+      name: TableMat
+    second: {fileID: 2100000, guid: 3da44bb1ca22ef440b570baf587306dd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
