@@ -46,6 +46,11 @@ public class ObjectOutline : MonoBehaviour
                     {
                         HandleDrawerAction();
                     }
+
+                    if (highlight.gameObject.GetComponent<DiaryAct>() != null)
+                    {
+                        highlight.gameObject.GetComponent<DiaryAct>().DiaryAction();
+                    }
                 }
             }
             else

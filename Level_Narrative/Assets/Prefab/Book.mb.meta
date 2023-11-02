@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Covers
+    second: {fileID: 2100000, guid: bfca6ad5739de9946b6c3fe01f9b6247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pages
+    second: {fileID: 2100000, guid: 4d08e64ea764fee458f1d5e945c6ebce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: standardSurface1
     second: {fileID: 2100000, guid: cc9573c11c5de7d44869d3ad7e89d0c4, type: 2}
   - first:
