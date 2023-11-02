@@ -6,17 +6,20 @@ using UnityEngine.EventSystems;
 public class ObjectOutline : MonoBehaviour
 {
     private Transform highlight;
-    private Transform selection;
     private RaycastHit raycastHit;
     public GameObject dotCursor;
     public GameObject selectCursor;
 
     void Update()
     {
-        // Highlight
+        // Reset the previous highlight
         if (highlight != null)
         {
-            highlight.gameObject.GetComponent<Outline>().enabled = false;
+            var outline = highlight.gameObject.GetComponent<Outline>();
+            if (outline != null)
+            {
+                outline.enabled = false;
+            }
             highlight = null;
         }
 
@@ -25,44 +28,80 @@ public class ObjectOutline : MonoBehaviour
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
             highlight = raycastHit.transform;
-            if (highlight.CompareTag("Selectable") && highlight != selection)
-            {
-                selectCursor.SetActive(true);
-                dotCursor.SetActive(false);
-                if (highlight.gameObject.GetComponent<Outline>() != null)
-                {
-                    highlight.gameObject.GetComponent<Outline>().enabled = true;
-                }
-                else
-                {
-                    Outline outline = highlight.gameObject.AddComponent<Outline>();
-                    outline.enabled = true;
-                    highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.magenta;
-                    highlight.gameObject.GetComponent<Outline>().OutlineWidth = 1000.0f;
-                }
 
+            if (highlight.CompareTag("Selectable"))
+            {
+                HandleHighlight();
+                
                 if (Input.GetMouseButtonDown(0))
                 {
-                    highlight.gameObject.GetComponent<DrawerAct>().DrawerAction();
+                    AudioSource audioSource = highlight.gameObject.GetComponent<AudioSource>();
+                    DrawerAct drawerAct = highlight.gameObject.GetComponent<DrawerAct>();
+
+                    if (audioSource != null)
+                    {
+                        HandleMusicPlayer();
+                    }
+                    else if (drawerAct != null)
+                    {
+                        HandleDrawerAction();
+                    }
                 }
             }
             else
             {
-                selectCursor.SetActive(false);
-                dotCursor.SetActive(true);
-                highlight = null;
+                ResetCursor();
             }
         }
-
-        // Selection
-        if (Input.GetMouseButtonDown(0))
+        else
         {
-            if (highlight)
-            {
-                // Get the object that was highlighted and clicked
+            ResetCursor();
+        }
+    }
 
+    void HandleHighlight()
+    {
+        selectCursor.SetActive(true);
+        dotCursor.SetActive(false);
+
+        var outline = highlight.gameObject.GetComponent<Outline>();
+        if (outline == null)
+        {
+            outline = highlight.gameObject.AddComponent<Outline>();
+            outline.OutlineColor = Color.magenta;
+            outline.OutlineWidth = 1000.0f;
+        }
+        outline.enabled = true;
+    }
+
+    void HandleMusicPlayer()
+    {
+        AudioSource audioSource = highlight.gameObject.GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Pause();
+            }
+            else
+            {
+                audioSource.Play();
             }
         }
     }
 
+    void HandleDrawerAction()
+    {
+        var drawerAct = highlight.gameObject.GetComponent<DrawerAct>();
+        if (drawerAct != null)
+        {
+            drawerAct.DrawerAction();
+        }
+    }
+
+    void ResetCursor()
+    {
+        selectCursor.SetActive(false);
+        dotCursor.SetActive(true);
+    }
 }
