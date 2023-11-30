@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
-    bool jumpEnabled;
+    public bool jumpEnabled;
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +50,12 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+    }
+
+    // see the check sphere in the scene view with gizmos enabled
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(groundCheck.position, groundDistance);
     }
 }
