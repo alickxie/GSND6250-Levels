@@ -12808,7 +12808,7 @@ GameObject:
   - component: {fileID: 1138749915}
   - component: {fileID: 1138749914}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: 'Phone Table '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
