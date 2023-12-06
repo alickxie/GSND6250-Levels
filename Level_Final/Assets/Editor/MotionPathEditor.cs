@@ -34,6 +34,7 @@ public class MotionPathEditor : EditorWindow
                 eulerAngles = EditorGUILayout.Vector3Field($"Point {i} Rotation", eulerAngles);
                 motionPathData.points[i].rotation = Quaternion.Euler(eulerAngles);
                 motionPathData.points[i].speed = EditorGUILayout.FloatField($"Point {i} Speed", motionPathData.points[i].speed);
+                motionPathData.points[i].rotationSpeed = EditorGUILayout.FloatField($"Point {i} Rotation Speed", motionPathData.points[i].rotationSpeed);
                 EditorGUILayout.EndHorizontal();
             }
         }
@@ -54,7 +55,8 @@ public class MotionPathEditor : EditorWindow
         {
             position = selectedObject.transform.position,
             rotation = selectedObject.transform.rotation,
-            speed = 1.0f // Default speed
+            speed = 1.0f, // Default speed
+            rotationSpeed = 360f // Default rotation speed
         };
         motionPathData.points.Add(newPoint);
     }
@@ -69,7 +71,14 @@ public class MotionPathEditor : EditorWindow
 
         if (!string.IsNullOrEmpty(path))
         {
-            AssetDatabase.CreateAsset(motionPathData, path);
+            if (!AssetDatabase.Contains(motionPathData))
+            {
+                AssetDatabase.CreateAsset(motionPathData, path);
+            }
+            else
+            {
+                EditorUtility.SetDirty(motionPathData);
+            }
             AssetDatabase.SaveAssets();
             EditorUtility.FocusProjectWindow();
             Selection.activeObject = motionPathData;
