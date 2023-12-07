@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CabinetMat
-    second: {fileID: 2100000, guid: e597d14dbb2efb3479c185f21307164f, type: 2}
+    second: {fileID: 2100000, guid: cdd432231ead9c84b9b8293781b622ac, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
