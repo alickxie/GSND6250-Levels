@@ -33,9 +33,9 @@ public class OpenBox : MonoBehaviour
         {
             for (float i = 0f; i <= 10f; i += 0.1f)
             {
-                transform.localPosition = new Vector3(transform.localPosition.x,
+                transform.localPosition = new Vector3(transform.localPosition.x + 0.0001f,
                     transform.localPosition.y,
-                    transform.localPosition.z + 0.01f);
+                    transform.localPosition.z);
                 yield return new WaitForSeconds(0f);
             }
             boxOpened = true;
@@ -44,9 +44,9 @@ public class OpenBox : MonoBehaviour
         {
             for (float i = 10f; i >= 0f; i -= 0.1f)
             {
-                transform.localPosition = new Vector3(transform.localPosition.x,
+                transform.localPosition = new Vector3(transform.localPosition.x - 0.0001f,
                     transform.localPosition.y,
-                    transform.localPosition.z - 0.01f);
+                    transform.localPosition.z);
                 yield return new WaitForSeconds(0f);
             }
             transform.position = initialPosition;
