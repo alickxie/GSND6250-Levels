@@ -10,6 +10,8 @@ public class ObjectOutline : MonoBehaviour
     public GameObject dotCursor;
     public GameObject selectCursor;
 
+    public GameObject holdingPosition;
+
     void Update()
     {
         // Reset the previous highlight
@@ -56,6 +58,17 @@ public class ObjectOutline : MonoBehaviour
                     if (highlight.gameObject.GetComponent<PenOut>() != null)
                     {
                         HandleMessyAction();
+                    }
+
+                    if (highlight.gameObject.GetComponent<HoldInHand>() != null)
+                    {
+                        highlight.gameObject.GetComponent<HoldInHand>().CheckHoldingPosition(holdingPosition);
+                    }
+
+                    if (highlight.gameObject.GetComponent<CheckOnTree>() != null)
+                    {
+                        Debug.Log("Compare items");
+                        highlight.gameObject.GetComponent<CheckOnTree>().CompareItems();
                     }
                 }
             }
