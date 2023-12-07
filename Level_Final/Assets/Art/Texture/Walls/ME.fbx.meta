@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: bb5d1a5ae2cc305499dfab2e53479055
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 8b79b8169728a7a41bcecd681c120220, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: 5ec7899e4d648d941a9596baa9052002, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bottoms_mat
+    second: {fileID: 2100000, guid: 4b0971f9eb765b244bd47f372c7e59b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair_mat
+    second: {fileID: 2100000, guid: 60159660d98e3214da46b07d6bcbf5c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hands_mat
+    second: {fileID: 2100000, guid: 6fd2688a95e6e404db3e3c11af9db602, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head_mat
+    second: {fileID: 2100000, guid: aab1b409ae0914444a0dc833b493ffc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: needles_mat
+    second: {fileID: 2100000, guid: 2b2351e51232f24479eef43f9c87b16b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right_bottom_mat
+    second: {fileID: 2100000, guid: 19a99c65554ed644b95d40ff97434d15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scarf_mat
+    second: {fileID: 2100000, guid: 8f13aee4e7627d343af5e7a606bb3027, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt_mat
+    second: {fileID: 2100000, guid: 0469de7e74857bd41b56e48dfadc3a0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yarn_mat
+    second: {fileID: 2100000, guid: fbcfdaf05185e8344a382db65b42534c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_bottoms_left_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 76665889f249ec144933809e94746b7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_bottoms_left_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 901c93ee7afa2ee44a70642ce0b358bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_bottoms_left_mat_sg_Normal
+    second: {fileID: 2800000, guid: 6b23ac0f3e624b44aa481976763a6187, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_bottoms_left_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 919d09e290f37724f8827cc907630dc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hair_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 212f984c965c7bf41a63327cb8ce4b47, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hair_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 593aea1e29eb9344689d9443d5743594, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hair_mat_sg_Normal
+    second: {fileID: 2800000, guid: 0d18c3d6148f50a4fbd0e721c8b67ce8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hair_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 076fe6e59a909794fa7a9e7403f33628, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hands_mat_SG_BaseColor
+    second: {fileID: 2800000, guid: 61b86ed5221410e4898c11ce8d193d83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hands_mat_SG_Metalness
+    second: {fileID: 2800000, guid: 9fec59bbc32d52644838caf0ef3bd8fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hands_mat_SG_Normal
+    second: {fileID: 2800000, guid: e19166a8dc39bf645ae05a0609d769d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_hands_mat_SG_Roughness
+    second: {fileID: 2800000, guid: 92b30a5ec712dbe4f86f0469930f6177, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_head_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 51fcac225bb7913479d902acb5be9451, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_head_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 5c4f0318f37d3a740b042af2967a2062, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_head_mat_sg_Normal
+    second: {fileID: 2800000, guid: 47036dab13f786d48af43d5730d958cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_head_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 54fe133bbd683ab4987c8ab816cb15a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_needles_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 8bd65041ef535554fa3ecba8a2c994d5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_needles_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 0482b061bb464a04998d1d7df76894e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_needles_mat_sg_Normal
+    second: {fileID: 2800000, guid: e0159f20e3688874a80a63149d0685be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_needles_mat_sg_Roughness
+    second: {fileID: 2800000, guid: b530892d126d06744a3b3a1452fec8f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_pelvis_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: e29f8efb7b02f6842bf0a4fe73dd5e32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_pelvis_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 8f4be657eb5e4e54c8029c691c781b41, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_pelvis_mat_sg_Normal
+    second: {fileID: 2800000, guid: 437f573ca42809643a4b4d1f04583322, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_pelvis_mat_sg_Roughness
+    second: {fileID: 2800000, guid: fd12e6bbe2a6e844c873d129c4c507bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_righti_bottom_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 98a79fc1d75ddb844a5e22ec50f5c54e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_righti_bottom_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 0bd4150c580951f449715bad6e4ed082, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_righti_bottom_mat_sg_Normal
+    second: {fileID: 2800000, guid: de0fbb726e5c24449b995a7ad6eb7bf3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_righti_bottom_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 3a0a3a70468280a4689f6f2f723e53bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_shirt_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: d5bed06bf6dcef74890b5910d4cac25b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_shirt_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 27e75bc0b40309649a8949cf13ad5f96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_shirt_mat_sg_Normal
+    second: {fileID: 2800000, guid: f3201747819ec62479472184fc838f75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_shirt_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 45ea5e64a5325754cbdbccd50ae5df06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_sleeves_mat_Sg_BaseColor
+    second: {fileID: 2800000, guid: 0dfdfaf9377f7d643b3eac12d564f8cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_sleeves_mat_Sg_Metalness
+    second: {fileID: 2800000, guid: 8971b242e0a101f4a824246267d17a44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_sleeves_mat_Sg_Normal
+    second: {fileID: 2800000, guid: 1228c14827058144f94dc8f45076659c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_sleeves_mat_Sg_Roughness
+    second: {fileID: 2800000, guid: 84648f6a7ddaa10489da74db63615d89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_yarn_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: c1488ac35a0ffe44d87617e0e3d66677, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_yarn_mat_sg_Metalness
+    second: {fileID: 2800000, guid: 7f3120cb28786cc4ba889f757fed3957, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_yarn_mat_sg_Normal
+    second: {fileID: 2800000, guid: ee5249073a1e206498a37cf1ca8be01d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lego_final_sp_export_yarn_mat_sg_Roughness
+    second: {fileID: 2800000, guid: 555bb0c5f1b6e3d458f77a2cce688952, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scarf_scarf_mat_sg_BaseColor
+    second: {fileID: 2800000, guid: 1ed8134ede6330c4ab02ee369264b72f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scarf_scarf_mat_sg_Metalness
+    second: {fileID: 2800000, guid: b8676489495cb0342803d10f2c738026, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scarf_scarf_mat_sg_Normal
+    second: {fileID: 2800000, guid: 62a18e38d8fce87499dfad22c78178b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scarf_scarf_mat_sg_Roughness
+    second: {fileID: 2800000, guid: ef647e20577f703499747c74e4af0584, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
