@@ -34,7 +34,7 @@ public class ObjectOutline : MonoBehaviour
             if (highlight.CompareTag("Selectable"))
             {
                 HandleHighlight();
-                
+
                 if (Input.GetMouseButtonDown(0))
                 {
                     AudioSource audioSource = highlight.gameObject.GetComponent<AudioSource>();
@@ -69,6 +69,11 @@ public class ObjectOutline : MonoBehaviour
                     {
                         Debug.Log("Compare items");
                         highlight.gameObject.GetComponent<CheckOnTree>().CompareItems();
+                    }
+
+                    if (highlight.gameObject.GetComponent<OpenDoor>() != null)
+                    {
+                        highlight.gameObject.GetComponent<OpenDoor>().OnMouseDown();
                     }
                 }
             }

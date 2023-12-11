@@ -13,7 +13,7 @@ public class OpenDoor : MonoBehaviour
         coroutineAllowed = true;
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         Invoke("RunCoroutine", 0f);
     }
