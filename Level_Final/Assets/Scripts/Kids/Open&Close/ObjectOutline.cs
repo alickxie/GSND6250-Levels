@@ -31,7 +31,7 @@ public class ObjectOutline : MonoBehaviour
         {
             highlight = raycastHit.transform;
 
-            if (highlight.CompareTag("Selectable"))
+            if (highlight.CompareTag("Selectable") && GameManager.instance.outlineEnabled)
             {
                 HandleHighlight();
 

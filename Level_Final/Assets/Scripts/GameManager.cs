@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     // Make this a instance
     public static GameManager instance;
 
+    public bool outlineEnabled = true;
+
     public List<GameObject> players;
 
     // Start is called before the first frame update
@@ -39,7 +41,17 @@ public class GameManager : MonoBehaviour
         {
             if (players[i].activeSelf)
             {
+                if (i == 0)
+                {
+                    outlineEnabled = true;
+                }
+                else
+                {
+                    outlineEnabled = false;
+                }   
+
                 players[i].SetActive(false);
+
                 if (i + 1 < players.Count)
                 {
                     players[i + 1].SetActive(true);
@@ -51,6 +63,6 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-        
+
     }
 }
