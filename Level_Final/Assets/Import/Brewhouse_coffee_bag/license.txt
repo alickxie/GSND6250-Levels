@@ -1,0 +1,11 @@
+Model Information:
+* title:	Brewhouse coffee bag
+* source:	https://sketchfab.com/3d-models/brewhouse-coffee-bag-9d7fe2ec42dd4890a2f25f7c54b3f865
+* author:	BuyMyMojo (https://sketchfab.com/BuyMyMojo)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Brewhouse coffee bag" (https://sketchfab.com/3d-models/brewhouse-coffee-bag-9d7fe2ec42dd4890a2f25f7c54b3f865) by BuyMyMojo (https://sketchfab.com/BuyMyMojo) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

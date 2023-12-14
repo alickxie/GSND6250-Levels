@@ -1,0 +1,11 @@
+Model Information:
+* title:	Champion Cup Trophy
+* source:	https://sketchfab.com/3d-models/champion-cup-trophy-b2819a9798354b2fb95c14cacde68db9
+* author:	Rafael Monteiro (https://sketchfab.com/monteirohq)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Champion Cup Trophy" (https://sketchfab.com/3d-models/champion-cup-trophy-b2819a9798354b2fb95c14cacde68db9) by Rafael Monteiro (https://sketchfab.com/monteirohq) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

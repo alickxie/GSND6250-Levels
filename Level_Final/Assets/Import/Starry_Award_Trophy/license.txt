@@ -1,0 +1,11 @@
+Model Information:
+* title:	Starry Award/Trophy
+* source:	https://sketchfab.com/3d-models/starry-awardtrophy-2a29954c94b445d680bd5692eedb24a7
+* author:	inkzord (https://sketchfab.com/inkzord)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Starry Award/Trophy" (https://sketchfab.com/3d-models/starry-awardtrophy-2a29954c94b445d680bd5692eedb24a7) by inkzord (https://sketchfab.com/inkzord) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
