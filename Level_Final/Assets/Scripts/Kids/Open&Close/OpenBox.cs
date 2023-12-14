@@ -7,6 +7,7 @@ public class OpenBox : MonoBehaviour
     private bool boxOpened;
     private bool coroutineAllowed;
     private Vector3 initialPosition;
+    public AudioClip drawerclip;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class OpenBox : MonoBehaviour
         coroutineAllowed = false;
         if (!boxOpened)
         {
+            AudioManager.Instance.PlaySound(drawerclip);
             for (float i = 0f; i <= 10f; i += 0.1f)
             {
                 transform.localPosition = new Vector3(transform.localPosition.x + 0.0001f,
@@ -42,6 +44,7 @@ public class OpenBox : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.PlaySound(drawerclip);
             for (float i = 10f; i >= 0f; i -= 0.1f)
             {
                 transform.localPosition = new Vector3(transform.localPosition.x - 0.0001f,
