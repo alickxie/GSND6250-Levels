@@ -35,10 +35,10 @@ public class MouseLook : MonoBehaviour
 
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-/*
+
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             playerBody.Rotate(Vector3.up * mouseX);
-*/
+/*
             // Use Lerp for smoother rotation
             Quaternion newRotation = Quaternion.Euler(xRotation, 0f, 0f);
             transform.localRotation = Quaternion.Lerp(transform.localRotation, newRotation, Time.deltaTime * mouseSensitivity);
@@ -46,6 +46,7 @@ public class MouseLook : MonoBehaviour
             // Smooth player body rotation
             Vector3 newPlayerRotation = playerBody.eulerAngles + Vector3.up * mouseX;
             playerBody.eulerAngles = Vector3.Lerp(playerBody.eulerAngles, newPlayerRotation, Time.deltaTime * mouseSensitivity);
+*/
         }
     }
 }

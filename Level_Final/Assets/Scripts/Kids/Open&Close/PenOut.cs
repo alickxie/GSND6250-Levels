@@ -6,7 +6,8 @@ public class PenOut : MonoBehaviour
 {
     Rigidbody rb;
     // Start is called before the first frame update
-    public AudioClip clip;
+    public AudioClip throwclip;
+    public AudioClip groundHitClip; // Audio clip to play when hitting the ground
 
     void Start()
     {
@@ -27,6 +28,16 @@ public class PenOut : MonoBehaviour
         // Add force toward the camera direction with random of left and right
         rb.AddForce(Camera.main.transform.forward * -10 + Camera.main.transform.right * Random.Range(-5, 5), ForceMode.Impulse);
         // rb.AddForce(Camera.main.transform.forward * -10, ForceMode.Impulse);
-        AudioManager.Instance.PlaySound(clip);
+        AudioManager.Instance.PlaySound(throwclip);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with an object tagged as "Ground"
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            // Play the ground hit sound
+            AudioManager.Instance.PlaySound(groundHitClip);
+        }
     }
 }
