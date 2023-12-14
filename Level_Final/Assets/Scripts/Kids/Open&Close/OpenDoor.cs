@@ -39,7 +39,7 @@ public class OpenDoor : MonoBehaviour
             AudioManager.Instance.PlaySound(dooropenclip);
             for (int step = 0; step <= totalSteps; step++)
             {
-                float angle = -degreesPerStep * step;
+                float angle = degreesPerStep * step;
                 transform.localRotation = Quaternion.Euler(0f, angle, 0f);
                 yield return new WaitForSeconds(stepTime);
             }
@@ -50,7 +50,7 @@ public class OpenDoor : MonoBehaviour
             AudioManager.Instance.PlaySound(dooropenclip);
             for (int step = totalSteps; step >= 0; step--)
             {
-                float angle = -degreesPerStep * step;
+                float angle = degreesPerStep * step;
                 transform.localRotation = Quaternion.Euler(0f, angle, 0f);
                 yield return new WaitForSeconds(stepTime);
             }

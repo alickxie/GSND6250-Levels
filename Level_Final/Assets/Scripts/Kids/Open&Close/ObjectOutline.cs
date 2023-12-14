@@ -81,6 +81,11 @@ public class ObjectOutline : MonoBehaviour
                         highlight.gameObject.GetComponent<PhoneAct>().PlayTheVoiceMessage();
                     }
 
+                    if (highlight.gameObject.GetComponent<catPush>() != null)
+                    {
+                        highlight.gameObject.GetComponent<catPush>().GetOut();
+                    }
+
                     MotionPathPlayer motionPathPlayer = highlight.gameObject.GetComponent<MotionPathPlayer>();
                     if (motionPathPlayer != null)
                     {
