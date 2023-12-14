@@ -1,0 +1,11 @@
+Model Information:
+* title:	Italian Coffee Machine
+* source:	https://sketchfab.com/3d-models/italian-coffee-machine-6291580b33d54513975db9f6964d8fc3
+* author:	Kirill1991 (https://sketchfab.com/Kirill1991)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Italian Coffee Machine" (https://sketchfab.com/3d-models/italian-coffee-machine-6291580b33d54513975db9f6964d8fc3) by Kirill1991 (https://sketchfab.com/Kirill1991) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

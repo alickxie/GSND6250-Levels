@@ -1,0 +1,11 @@
+Model Information:
+* title:	Basic coffe cup collection
+* source:	https://sketchfab.com/3d-models/basic-coffe-cup-collection-c278baa1189a49bd83256230e693610c
+* author:	shazammm (https://sketchfab.com/shazzamm)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Basic coffe cup collection" (https://sketchfab.com/3d-models/basic-coffe-cup-collection-c278baa1189a49bd83256230e693610c) by shazammm (https://sketchfab.com/shazzamm) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

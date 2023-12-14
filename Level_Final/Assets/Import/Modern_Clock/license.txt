@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modern Clock
+* source:	https://sketchfab.com/3d-models/modern-clock-29a3f59a59204285b745f8acc8e09a19
+* author:	Nick Kotik (https://sketchfab.com/Nathanson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modern Clock" (https://sketchfab.com/3d-models/modern-clock-29a3f59a59204285b745f8acc8e09a19) by Nick Kotik (https://sketchfab.com/Nathanson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
