@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b31b7dad2c78de41acec9504a68daef, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  points:
+  - position: {x: -1.019, y: 0.773, z: 17.159}
+    rotation: {x: 0, y: 0.99053603, z: 0, w: 0.13725288}
+    speed: 1
+    rotationSpeed: 360
+  - position: {x: -1.019, y: 4.25, z: 17.159}
+    rotation: {x: 0, y: 0.99053603, z: 0, w: 0.13725288}
+    speed: 1
+    rotationSpeed: 360
+  - position: {x: -1.019, y: 4.367828, z: 16.986153}
+    rotation: {x: 0.12568788, y: -0.39797008, z: 0.907073, w: -0.055144377}
+    speed: 0.1
+    rotationSpeed: 360
+  - position: {x: -1.019, y: 4.383398, z: 17.053925}
+    rotation: {x: 0.0012194221, y: -0.99049693, z: 0.008800521, w: -0.13724755}
+    speed: 0.1
+    rotationSpeed: 360
+  - position: {x: -3.25, y: 0.75, z: 18.25}
+    rotation: {x: 0.0012194221, y: -0.99049693, z: 0.008800521, w: -0.13724755}
+    speed: 0.5
+    rotationSpeed: 360
