@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: GlassMat
+    second: {fileID: 2100000, guid: ea88a09384f5c3e42a47f4334e515ea4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: HandleMat
     second: {fileID: 2100000, guid: fa56448b0b86b7c4880b58de5f923504, type: 2}
   - first:
@@ -57,7 +62,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
