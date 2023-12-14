@@ -1,0 +1,11 @@
+Model Information:
+* title:	Red High Heel
+* source:	https://sketchfab.com/3d-models/red-high-heel-754a6e7eeecd4b648e1cdab68d385310
+* author:	CIMtech Inc. (https://sketchfab.com/cimtech)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Red High Heel" (https://sketchfab.com/3d-models/red-high-heel-754a6e7eeecd4b648e1cdab68d385310) by CIMtech Inc. (https://sketchfab.com/cimtech) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

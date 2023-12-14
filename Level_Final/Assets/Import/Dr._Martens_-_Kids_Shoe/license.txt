@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dr. Martens - Kids Shoe
+* source:	https://sketchfab.com/3d-models/dr-martens-kids-shoe-9865eeedc1624584a43f7e7c945a1681
+* author:	Andrei Alexandrescu (https://sketchfab.com/Andrei_Alexandrescu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dr. Martens - Kids Shoe" (https://sketchfab.com/3d-models/dr-martens-kids-shoe-9865eeedc1624584a43f7e7c945a1681) by Andrei Alexandrescu (https://sketchfab.com/Andrei_Alexandrescu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
