@@ -75,6 +75,11 @@ public class ObjectOutline : MonoBehaviour
                     {
                         highlight.gameObject.GetComponent<OpenDoor>().OnMouseDown();
                     }
+
+                    if (highlight.gameObject.GetComponent<PhoneAct>() != null)
+                    {
+                        highlight.gameObject.GetComponent<PhoneAct>().PlayTheVoiceMessage();
+                    }
                 }
             }
             else

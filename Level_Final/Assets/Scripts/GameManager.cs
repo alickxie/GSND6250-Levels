@@ -11,11 +11,17 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> players;
 
+    public Animator kidAnimator;
+    public PlayerMovement playerMovement;
+    public MouseLook mouseLook;
+    public QTETree qTETree;
+
     // Start is called before the first frame update
     void Start()
     {
         // Set the instance
         instance = this;
+        // StopKidMoveing(true);
     }
 
     // Update is called once per frame
@@ -41,28 +47,45 @@ public class GameManager : MonoBehaviour
         {
             if (players[i].activeSelf)
             {
-                if (i == 0)
-                {
-                    outlineEnabled = true;
-                }
-                else
-                {
-                    outlineEnabled = false;
-                }   
 
                 players[i].SetActive(false);
 
                 if (i + 1 < players.Count)
                 {
                     players[i + 1].SetActive(true);
+                    outlineEnabled = false;
                 }
                 else
                 {
                     players[0].SetActive(true);
+                    outlineEnabled = true;
                 }
                 break;
             }
         }
+    }
 
+    public void StartQTETree()
+    {
+        qTETree.decorateTree();
+    }
+
+    public void StopKidMoveing(bool x)
+    {
+        playerMovement.Moveable(!x);
+        mouseLook.LockCursor(x);
+    }
+
+    public void KidAvoid()
+    {
+        kidAnimator.enabled = true;
+        StartCoroutine(KidAvoidCoroutine());
+    }
+
+    IEnumerator KidAvoidCoroutine()
+    {
+        yield return new WaitForSeconds(4f);
+        kidAnimator.enabled = false;
+        NextPlayer();
     }
 }

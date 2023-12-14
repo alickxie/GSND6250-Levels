@@ -58,4 +58,16 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(groundCheck.position, groundDistance);
     }
+
+    public void Moveable(bool x)
+    {
+        if (x == true)
+        {
+            speed = 12f;
+        }
+        else
+        {
+            speed = 0f;
+        }
+    }
 }
