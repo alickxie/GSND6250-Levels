@@ -1,0 +1,11 @@
+Model Information:
+* title:	First snow
+* source:	https://sketchfab.com/3d-models/first-snow-fca1d21541724148a38f7636777394fa
+* author:	nedo (https://sketchfab.com/nedo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "First snow" (https://sketchfab.com/3d-models/first-snow-fca1d21541724148a38f7636777394fa) by nedo (https://sketchfab.com/nedo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

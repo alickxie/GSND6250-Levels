@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GlassMat
-    second: {fileID: 2100000, guid: ea88a09384f5c3e42a47f4334e515ea4, type: 2}
+    second: {fileID: 2100000, guid: 1fa9b5f394575cc4897e3f9814750404, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
