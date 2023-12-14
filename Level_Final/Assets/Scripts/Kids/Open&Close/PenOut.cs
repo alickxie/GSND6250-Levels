@@ -6,6 +6,8 @@ public class PenOut : MonoBehaviour
 {
     Rigidbody rb;
     // Start is called before the first frame update
+    public AudioClip clip;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -25,5 +27,6 @@ public class PenOut : MonoBehaviour
         // Add force toward the camera direction with random of left and right
         rb.AddForce(Camera.main.transform.forward * -10 + Camera.main.transform.right * Random.Range(-5, 5), ForceMode.Impulse);
         // rb.AddForce(Camera.main.transform.forward * -10, ForceMode.Impulse);
+        AudioManager.Instance.PlaySound(clip);
     }
 }
