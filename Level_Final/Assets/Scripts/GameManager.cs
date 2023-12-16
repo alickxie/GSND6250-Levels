@@ -34,17 +34,17 @@ public class GameManager : MonoBehaviour
             Application.Quit();
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            // Test the function
-            NextPlayer();
-        }
+        // if (Input.GetKeyDown(KeyCode.T))
+        // {
+        //     // Test the function
+        //     NextPlayer();
+        // }
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            // Test the function
-            ending();
-        }
+        // if (Input.GetKeyDown(KeyCode.Y))
+        // {
+        //     // Test the function
+        //     ending();
+        // }
     }
 
     public void NextPlayer()
@@ -100,5 +100,15 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("ending");
         audioSource.Play();
+        StartCoroutine(endingCoroutine());
+    }
+
+    IEnumerator endingCoroutine()
+    {
+        NextPlayer();
+        yield return new WaitForSeconds(5f);
+        NextPlayer();
+        yield return new WaitForSeconds(5f);
+        NextPlayer();
     }
 }
