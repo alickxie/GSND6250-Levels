@@ -21,6 +21,8 @@ public class QTETree : MonoBehaviour
     bool singlePlay = false;
     bool singleTon = false;
 
+    public GameObject handdecoration;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +84,7 @@ public class QTETree : MonoBehaviour
             whiteScreenSplash.SetTrigger("splash");
             if(singleTon == false)
             {
+                Destroy(handdecoration.transform.GetChild(0).gameObject);
                 GameManager.instance.KidAvoid();
                 singleTon = true;
             }

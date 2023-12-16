@@ -86,6 +86,11 @@ public class ObjectOutline : MonoBehaviour
                         highlight.gameObject.GetComponent<catPush>().GetOut();
                     }
 
+                    if (highlight.gameObject.GetComponent<openTV>() != null)
+                    {
+                        highlight.gameObject.GetComponent<openTV>().openTVAction();
+                    }
+
                     MotionPathPlayer motionPathPlayer = highlight.gameObject.GetComponent<MotionPathPlayer>();
                     if (motionPathPlayer != null)
                     {

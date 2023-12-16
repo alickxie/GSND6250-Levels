@@ -17,16 +17,20 @@ public class CheckOnTree : MonoBehaviour
             GameObject child = decorationOnHand.transform.GetChild(0).gameObject;
             if (treeitemName == child.GetComponent<HoldInHand>().GetItemName())
             {
-                if (treeitemName == "cane")
+                if (treeitemName == "bigcane")
                 {
                     GameManager.instance.StartQTETree();
                     GameManager.instance.StopKidMoveing(true);
+                    Destroy(this.gameObject);
+                }
+                else
+                {
+                    Destroy(child);
+                    decorationOnTree.SetActive(true);
+                    Destroy(this.gameObject);
                 }
                 // Debug.Log("Same item");
                 // Destroy the child
-                Destroy(child);
-                decorationOnTree.SetActive(true);
-                Destroy(this.gameObject);
             }
         }
     }

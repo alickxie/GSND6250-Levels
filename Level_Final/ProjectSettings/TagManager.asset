@@ -8,6 +8,7 @@ TagManager:
   - Important
   - Ground
   - MioSelectable
+  - cat
   layers:
   - Default
   - TransparentFX

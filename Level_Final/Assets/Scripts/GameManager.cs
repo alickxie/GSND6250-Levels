@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public PlayerMovement playerMovement;
     public MouseLook mouseLook;
     public QTETree qTETree;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
             // Test the function
             NextPlayer();
         }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            // Test the function
+            ending();
+        }
     }
 
     public void NextPlayer()
@@ -53,12 +60,12 @@ public class GameManager : MonoBehaviour
                 if (i + 1 < players.Count)
                 {
                     players[i + 1].SetActive(true);
-                    outlineEnabled = false;
+                    // outlineEnabled = false;
                 }
                 else
                 {
                     players[0].SetActive(true);
-                    outlineEnabled = true;
+                    // outlineEnabled = true;
                 }
                 break;
             }
@@ -87,5 +94,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         kidAnimator.enabled = false;
         NextPlayer();
+    }
+
+    public void ending()
+    {
+        Debug.Log("ending");
+        audioSource.Play();
     }
 }

@@ -17,7 +17,8 @@ public class catJump : MonoBehaviour
 
     public PlayerMovement playerMovement;
     public CharacterController controller;
-
+    public AudioSource landingSound;
+    
     void Update()
     {
         // Check if the player is within the check sphere
@@ -64,6 +65,7 @@ public class catJump : MonoBehaviour
         else
         {
             isJumping = false;
+            landingSound.Play();
             AdvanceToNextEndPoint();
         }
     }
